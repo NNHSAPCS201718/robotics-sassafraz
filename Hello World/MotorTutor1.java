@@ -1,9 +1,3 @@
-/**
- * Classical Hello World program for lejos
- *
- * @author gcschmit
- * @version 15 May 2018
- */
 
 import lejos.nxt.Button;
 import lejos.nxt.LCD;
@@ -14,7 +8,7 @@ import lejos.nxt.Motor;
  * @author owner.GLASSEY
  *
  */
-public class Hello
+public class MotorTutor1
 {
     /**
      * @param args
