@@ -8,7 +8,7 @@ import lejos.nxt.Motor;
  * @author owner.GLASSEY
  *
  */
-public class MotorTutor1
+public class Motor1
 {
     /**
      * @param args

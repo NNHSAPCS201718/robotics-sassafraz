@@ -12,9 +12,9 @@ public class Motor2
     public static void main(String[] args)
     {
         LCD.drawString("Program 2", 0,0);
-        Motor.B.setSpeed(2020);
+        Motor.B.setSpeed(720);
         Motor.B.forward();
-        Delay.msDelay(10000);
+        Delay.msDelay(2000);
         LCD.drawString(Motor.B.getTachoCount()+"",0,1);
         Motor.B.stop();
         LCD.drawString(Motor.B.getTachoCount()+"",0,2);
