@@ -8,23 +8,18 @@
 import lejos.nxt.*;
 import lejos.util.Delay;
 import lejos.robotics.navigation.DifferentialPilot;
-public class SquareTracer
+public class Circle
 {
     DifferentialPilot pilot;
     
-    public void drawSquare(int length)
+    public void drawCircle(double r, double angle, boolean b)
     {
-        Delay.msDelay(2000);
-        for(int i=0;i<4;i++)
-        {
-            pilot.travel(length);
-            pilot.rotate(107);
-        }
+        pilot.arc(r,angle,b);
     }
     public static void main(String[] args)
     {
-        SquareTracer s=new SquareTracer();
+        Circle s=new Circle();
         s.pilot=new DifferentialPilot(2.25f,5.5f,Motor.B,Motor.C);
-        s.drawSquare(3);
+        s.drawCircle(10,720,false);
     }
 }
