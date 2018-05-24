@@ -18,8 +18,57 @@ public class SquareTracer
         for(int i=0;i<4;i++)
         {
             pilot.travel(length);
+            penUp();
+            pilot.travel(-8.5);
             pilot.rotate(107);
+            pilot.travel(8.5);
+            penDown();
         }
+    }
+    public void printHi()
+    {
+        Delay.msDelay(1000);
+        pilot.travel(6);
+        penUp();
+        pilot.rotate(214);
+        penDown();
+        pilot.travel(3);
+        penUp();
+        pilot.rotate(107);
+        penDown();
+        pilot.travel(3);
+        penUp();
+        pilot.rotate(107);
+        penDown();
+        pilot.travel(3);
+        penUp();
+        pilot.rotate(214);
+        penDown();
+        pilot.travel(6);
+        penUp();
+        pilot.rotate(107); 
+        penDown();
+        pilot.travel(2);
+        penUp();
+        pilot.rotate(107);
+        penDown();
+        pilot.travel(3);
+        penUp();
+        pilot.rotate(214);
+        penDown();
+        pilot.travel(3);
+        penUp();
+        pilot.rotate(107);
+        penDown();
+        pilot.travel(2);
+    }
+    public static void penUp()
+    {
+        Motor.A.rotateTo(90);
+    }
+    public static void penDown()
+    {
+        Motor.A.rotateTo(0);
     }
     public static void main(String[] args)
     {
